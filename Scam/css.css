@@ -1,0 +1,57 @@
+.another-login-box h2 {
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+}
+.another-login-box a {
+    font-size: 12px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* 新增這一行，將子元素垂直排列 */
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F9F9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    width: 250px;
+    height: 350px;
+    margin-bottom: 20px; /* 新增這一行，為了在 login box 和 another login box 之間留下一些空間 */
+}
+
+.another-login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    width: 250px;
+    height: 3px;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+button:hover {
+    background-color: #3B83BD;
+    cursor: pointer;
+}
