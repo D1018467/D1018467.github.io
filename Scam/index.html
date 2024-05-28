@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<meta charset="UTF-8">
+<html>
+<head>
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        /* 假的 CSS 規則，只是為了測試 CSS 文件是否正確引用了 */
+        body {
+            background-color: #F7F9F9;
+        }
+    </style>
+</head>
+
+<body>
+<div class="login-box">
+    <img src="https://www.pngitem.com/pimgs/m/132-1327993_instagram-logo-word-png-transparent-png.png" style="width: 80%; height: auto;">
+    <hr>
+    <input type="text" placeholder="Phone number, usename, or email" name="email" required>
+    <input type="password" placeholder="Password" name="psw" required>
+    <label>
+        <input type="checkbox" id="show-password" style="margin-bottom:15px"> Show Password
+    </label>
+    <style>
+        button {
+            width: 200px;
+            background-color: #5499C7;
+        }
+    </style>
+
+    <button onclick="alert('你的號被我盜了，小憨憨')">Login</button>
+
+    <p>————— OR —————<p>
+    <a href="#" style="color:dodgerblue" id="Log-in-with-Facebook-link"> Log in with Facebook </a>
+    <br>
+    <a href="#" style="color:dodgerblue" id="forgot-password-link"> Forgot password </a>
+</div>
+<div class="another-login-box">
+    <!-- 這裡是 another login box 的內容 -->
+    <h2>Don't have an account?<a href="#" onclick="openSignUpWindow();" style="color:dodgerblue"> Sign up</a></h2>
+
+    <script>
+        function openSignUpWindow() {
+            window.open("https://www.instagram.com/accounts/emailsignup/", "signup", "width=500,height=500");
+        }
+    </script>
+</div>
+<p>Get the app.</p>
+<script src="showPassword.js"></script>
+</body>
+</html>
